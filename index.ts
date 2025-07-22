@@ -47,7 +47,7 @@ async function main() {
             coinType = "ZORA_V4_COIN"
         }
 
-        if (TBA_PAIRINGS.includes(pool.currency0.wrapped.address)) {
+        if (TBA_PAIRINGS.includes(pool.currency0.wrapped.address) || TBA_PAIRINGS.includes(pool.currency1.wrapped.address)) {
             appType = "TBA"
         }
 
