@@ -46,12 +46,12 @@ async function main() {
         } else if (key.hooks === "0x9ea932730A7787000042e34390B8E435dD839040") {
             coinType = "ZORA_V4_COIN"
         }
+        // if it's not a zora coin, skip
+        if (!coinType) continue;
 
         if (TBA_PAIRINGS.includes(pool.currency0.wrapped.address) || TBA_PAIRINGS.includes(pool.currency1.wrapped.address)) {
             appType = "TBA"
         }
-
-        if (!coinType) continue;
 
         const priceUpper = TickMath.getSqrtRatioAtTick(TickMath.MAX_TICK)
         const priceLower = TickMath.getSqrtRatioAtTick(TickMath.MIN_TICK)
