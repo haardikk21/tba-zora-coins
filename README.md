@@ -1,3 +1,5 @@
+Repo has moved to https://github.com/base/demos/tree/master/base-app-coins
+
 # Zora & Base App Coin Pool Discovery
 
 A developer starter guide for identifying and analyzing Uniswap V4 pools containing Zora ecosystem tokens and Base App (TBA) coins on Base chain.
